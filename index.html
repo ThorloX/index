@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> I am no Stranger to love</title>
+</head>
+
+<body>
+    <p>Ferdighet 4 - Variabel utenfor funksjon og innenfor funksjon, samt sette sammen tekst av flere deler</p>
+    <button onclick="tell(this)">1</button>
+    <button onclick="tell(this)">2</button>
+    <button onclick="tell(this)">3</button>
+    <button onclick="tell(this)">4</button>
+    <button onclick="tell(this)">5</button>
+    <button onclick="tell(this)">6</button>
+    <button onclick="tell(this)">7</button>
+    <button onclick="tell(this)">8</button>
+    <button onclick="tell(this)">9</button>
+
+    <div id="tall1"></div>
+
+    <div id="link">Åpnet</div>
+
+
+    <script>
+
+        function tell(tall){
+    document.getElementById('tall1').innerHTML += tall.innerHTML;
+
+    if(document.getElementById('tall1').innerHTML == 1234){
+        document.getElementById('tall1').innerHTML = window.location.assign('https://www.youtube.com/watch?v=DLzxrzFCyOs%27')
+    }
+    if(document.getElementById('tall1').innerHTML.length > 4){
+        document.getElementById('tall1').innerHTML = ''
+    }
+}
+
+    </script>
+</body>
+</html>
